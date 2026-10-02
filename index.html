@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Games, Projects & Achievements</title>
+  <meta name="description" content="Personal portfolio showcasing games, projects, and achievements.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">PORTFOLIO</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Your Name</h1>
+      <p class="hero-title">Game Developer & Creator</p>
+      <p class="hero-desc">
+        I design and build games, interactive experiences, and creative projects. 
+        Explore my work below.
+      </p>
+      <div class="hero-buttons">
+        <a href="#games" class="btn btn-primary">View Games</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            <!-- Replace this text with your own bio -->
+            Passionate game developer and creator focused on building engaging experiences. 
+            I love turning ideas into playable games and sharing them with the world.
+          </p>
+          <p>
+            Whether it's indie games, prototypes, or full projects, I enjoy the entire process — 
+            from concept and design to development and release.
+          </p>
+          <div class="skills">
+            <h3>Skills & Tools</h3>
+            <div class="skill-tags">
+              <!-- Edit these tags -->
+              <span>Unity</span>
+              <span>C#</span>
+              <span>Godot</span>
+              <span>JavaScript</span>
+              <span>HTML5 / CSS</span>
+              <span>Game Design</span>
+              <span>Pixel Art</span>
+              <span>Blender</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="stat">
+            <span class="stat-number" id="gamesCount">0</span>
+            <span class="stat-label">Games</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" id="projectsCount">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" id="achievementsCount">0</span>
+            <span class="stat-label">Achievements</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Games Section -->
+  <section id="games" class="section games">
+    <div class="container">
+      <h2 class="section-title">My Games</h2>
+      <p class="section-subtitle">Playable games and experiences I've created</p>
+      
+      <div class="cards-grid" id="gamesGrid">
+        <!-- 
+          HOW TO ADD A GAME:
+          Copy one of the cards below and fill in your details.
+          Replace image, title, description, tags, and links.
+        -->
+
+        <!-- Example Game Card 1 -->
+        <article class="card game-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=340&fit=crop" alt="Game screenshot" loading="lazy">
+            <div class="card-overlay">
+              <a href="#" class="btn btn-small" target="_blank" rel="noopener">Play / Download</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Game Title One</h3>
+            <p class="card-desc">
+              Short description of your game. What is it about? Genre? What makes it special?
+            </p>
+            <div class="card-tags">
+              <span>Action</span>
+              <span>Unity</span>
+              <span>PC</span>
+            </div>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noopener">Steam</a>
+              <a href="#" target="_blank" rel="noopener">itch.io</a>
+              <a href="#" target="_blank" rel="noopener">Trailer</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Example Game Card 2 -->
+        <article class="card game-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=340&fit=crop" alt="Game screenshot" loading="lazy">
+            <div class="card-overlay">
+              <a href="#" class="btn btn-small" target="_blank" rel="noopener">Play / Download</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Game Title Two</h3>
+            <p class="card-desc">
+              Another game description. Replace this with real details about your project.
+            </p>
+            <div class="card-tags">
+              <span>Puzzle</span>
+              <span>Mobile</span>
+              <span>Godot</span>
+            </div>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noopener">Google Play</a>
+              <a href="#" target="_blank" rel="noopener">App Store</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Example Game Card 3 -->
+        <article class="card game-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=600&h=340&fit=crop" alt="Game screenshot" loading="lazy">
+            <div class="card-overlay">
+              <a href="#" class="btn btn-small" target="_blank" rel="noopener">Play Now</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Browser Game</h3>
+            <p class="card-desc">
+              A lightweight HTML5 / WebGL game that can be played directly in the browser.
+            </p>
+            <div class="card-tags">
+              <span>HTML5</span>
+              <span>Browser</span>
+              <span>Casual</span>
+            </div>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noopener">Play Online</a>
+              <a href="#" target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ADD MORE GAME CARDS HERE by copying the structure above -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title">Other Projects</h2>
+      <p class="section-subtitle">Tools, experiments, websites, and creative work</p>
+      
+      <div class="cards-grid" id="projectsGrid">
+        <!-- Example Project Card -->
+        <article class="card project-card">
+          <div class="card-body">
+            <h3 class="card-title">Project Name</h3>
+            <p class="card-desc">
+              Description of a non-game project — website, tool, art, prototype, etc.
+            </p>
+            <div class="card-tags">
+              <span>Web</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="card-body">
+            <h3 class="card-title">Another Project</h3>
+            <p class="card-desc">
+              Replace with your real project details. You can add as many as you want.
+            </p>
+            <div class="card-tags">
+              <span>Tool</span>
+              <span>Open Source</span>
+            </div>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noopener">View</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ADD MORE PROJECT CARDS HERE -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section achievements">
+    <div class="container">
+      <h2 class="section-title">Achievements</h2>
+      <p class="section-subtitle">Highlights, awards, milestones, and recognition</p>
+      
+      <div class="timeline" id="achievementsList">
+        <!-- Example Achievement -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025</span>
+            <h3>First Game Released</h3>
+            <p>Successfully published my first complete game on itch.io / Steam.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024</span>
+            <h3>Game Jam Winner / Participant</h3>
+            <p>Participated in or won a game jam (Ludum Dare, GMTK, etc.). Replace with your real achievement.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023</span>
+            <h3>Milestone</h3>
+            <p>Describe another important achievement, award, feature, or recognition here.</p>
+          </div>
+        </div>
+
+        <!-- ADD MORE ACHIEVEMENTS HERE -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Have a question, collaboration idea, or just want to say hi?</p>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <p>
+            Feel free to reach out via email or connect with me on social platforms.
+          </p>
+          <div class="contact-links">
+            <!-- Replace with your real links -->
+            <a href="mailto:your.email@example.com" class="contact-item">
+              <span class="contact-icon">✉</span>
+              your.email@example.com
+            </a>
+            <a href="https://youtube.com/@yourchannel" target="_blank" rel="noopener" class="contact-item">
+              <span class="contact-icon">▶</span>
+              YouTube Channel
+            </a>
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="contact-item">
+              <span class="contact-icon">⌘</span>
+              GitHub
+            </a>
+            <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener" class="contact-item">
+              <span class="contact-icon">𝕏</span>
+              X / Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name. Built with ❤️ for showcasing games & projects.</p>
+      <p class="footer-note">Host this site for free on GitHub Pages or Cloudflare Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
